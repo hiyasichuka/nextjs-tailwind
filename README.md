@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+```sh
+bunx shadcn-ui@latest init
+✔ Which style would you like to use? › Default
+✔ Which color would you like to use as base color? › Zinc
+✔ Would you like to use CSS variables for colors? … no / yes
+
+✔ Writing components.json...
+✔ Initializing project...
+✔ Installing dependencies...
+
+Success! Project initialization completed. You may now add components.
+```
