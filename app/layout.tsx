@@ -31,6 +31,9 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
+        <footer className="container">
+          <p>&copy; takahashi kei</p>
+        </footer>
       </body>
     </html>
   );
