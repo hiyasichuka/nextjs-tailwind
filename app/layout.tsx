@@ -18,22 +18,20 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={cn(inter.className, "min-h-dvh")}>
-        <header className="container h-16 flex items-center border-b justify-between">
-          <h1 className="font-bold">LOGO</h1>
-          <nav>
-            <ul className="flex gap-4">
-              <li>LINK</li>
-              <li>LINK</li>
-              <li>LINK</li>
-              <li>LINK</li>
-              <li>LINK</li>
-              <li>LINK</li>
+        <header className="bg-indigo-100 container flex  h-16 items-center justify-between">
+          <h1 className="font-bold">Logo</h1>
+          <nav className="bg-gray-300 p-5">
+            <ul className="flex gap-10">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
             </ul>
           </nav>
         </header>
         {children}
-        <footer className="container sticky top-full">
-          <p>&copy; takahashi kei</p>
+        <footer className="bg-pink-100 container p-5 sticky top-full">
+          <p>&copy; Kei Takahashi</p>
         </footer>
       </body>
     </html>
