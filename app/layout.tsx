@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -27,11 +28,13 @@ export default function RootLayout({
       <body className={cn(inter.className, 'min-h-dvh')}>
         <header className="bg-indigo-100 container flex  h-16 items-center justify-between">
           <h1 className="font-bold">Logo</h1>
-          <nav className="bg-gray-300 p-5">
+          <nav className="bg-gray-300">
             <ul className="flex gap-10">
               {navItems.map((item) => (
                 <li key={item.label}>
-                  <Link href={item.href}>{item.label}</Link>
+                  <Button variant={'ghost'} asChild>
+                    <Link href={item.href}>{item.label}</Link>
+                  </Button>
                 </li>
               ))}
             </ul>
